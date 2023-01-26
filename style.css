@@ -122,7 +122,18 @@ body{
 }
 
 
+* { 
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    -moz-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+
+
 /* -------------------------------------------------------Start Nav Bar------------------------------------------- */
+
+
+
 
 .header{
     height: 100px;
