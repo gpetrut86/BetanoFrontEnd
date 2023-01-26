@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Philosopher:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <title>Betano</title>
+</head>
+<body>
+    <!--Figma design https://www.figma.com/file/J3pnj3cGTDDCnUzB7zVQv4/Front-End-Dev-Test-(Copy)?node-id=0%3A1&t=izBW5ttjHV2t4H3U-0 -->
+    
+    <header class="header">
+        <nav id="navBar">
+            <h1 class="logo">Logo</h1>
+
+            <button class="popUp-show-btn">
+                Pop Up
+            </button>
+        </nav>
+        
+    </header>
+
+    <!-- ------------------------------ Standings section -->
+    <div class="standings-section">
+        <div class="standings-section-header">
+            <img class="location-flag" src="./images/EU flag.png" alt="">
+            <h2 class="location-title">Europa | UEFA Champions League 2021/2022</h2>
+        </div>
+
+        <div class="standings-section-nav">
+            <div class="standings-section-nav-item active">
+                <button class="standings-section-nav-item-title">STANDINGS</button>
+            </div>
+
+            <div class="standings-section-nav-item">
+                <button class="standings-section-nav-item-title">FORM</button>
+            </div>
+
+            <div class="standings-section-nav-item">
+                <button class="standings-section-nav-item-title">GOALS STATS</button>
+            </div>
+
+            <div class="standings-section-nav-item">
+                <button class="standings-section-nav-item-title">GOALS & CORNERS</button>
+            </div>
+
+            <div class="standings-section-nav-item">
+                <button class="standings-section-nav-item-title">TOP SCORES</button>
+            </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div class="standings-section-filters">
+            <div class="standings-section-filters-item active">
+                <button class="standings-section-filters-item-title">Overall</button>
+            </div>
+
+            <div class="standings-section-filters-item">
+                <button class="standings-section-filters-item-title">Home</button>
+            </div>
+
+            <div class="standings-section-filters-item">
+                <button class="standings-section-filters-item-title">Away</button>
+            </div>
+
+        </div>
+
+
+        <div class="standings-section-filters-display">
+            <div class="standings-section-filters">
+                <div class="standings-section-filters-item active">
+                    <button class="standings-section-filters-item-title">Full Time</button>
+                </div>
+    
+                <div class="standings-section-filters-item">
+                    <button class="standings-section-filters-item-title">Fires Half</button>
+                </div>
+    
+                <div class="standings-section-filters-item">
+                    <button class="standings-section-filters-item-title">Second Half</button>
+                </div>
+                
+            </div>
+
+              <div class="standings-section-display ">
+                <div class="tabel-hamburger1 active">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+
+                </div>
+                <div class="tabel-hamburger2 ">
+                   <div><span></span></div>
+                   <div><span></span></div>
+                   <div><span></span></div>
+
+                </div>
+            </div>
+
+
+
+        </div>
+
+        <div  class="standings-section-table">
+
+            <div class="standings-section-table-header">
+                <div class="standings-section-table-header-item">
+                    <p>#</p>
+                </div>
+                <div class="standings-section-table-header-item">
+                    <p>Team</p>
+                </div>
+                <div class="standings-section-table-header-item">
+                    <p>MP</p>
+                </div>
+                <div class="standings-section-table-header-item">
+                    <p>G</p>
+                </div>
+                <div class="standings-section-table-header-item">
+                    <p>PTS</p>
+                </div>
+            </div>
+            
+            <div class="standings-section-table-body">
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>1</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+
+   
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>2</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+      
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>3</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>4</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>5</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>6</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>7</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>8</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+
+   
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>9</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+      
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>10</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="standings-section-table-body-item">
+                    <div class="standings-section-table-body-item-row">
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>11</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>PSV Eindhoven</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>36</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>28</p>
+                        </div>
+                        <div class="standings-section-table-body-item-row-item">
+                            <p>89</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+            </div>
+
+
+            
+        </div>
+    </div>
+
+    <!-- ------------------------------ Head 2 Head records section -->
+
+    <div class="head2head-section">
+        <div class="head2head-section-header">
+            <h2 class="head2head-section-header-title">Head 2 Head Records</h2>
+        </div> 
+
+        <div class="head2head-section-matchInfo">
+            <div class="head2head-section-matchInfo-team">
+                <div class="head2head-section-matchInfo-team-logo">
+                    <img src="./images/manchester-city-logo.svg" alt="Proxima Nova Condensed">
+                </div>
+                <div class="head2head-section-matchInfo-team-name">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+            </div>  
+
+
+            <div class="head2head-section-matchInfo-infobar">
+                <div class="head2head-section-matchInfo-infobar-item">
+                    <p>20%</p>
+                    <div class="head2head-section-matchInfo-infobar-item-score">
+                        <p>1 Win</p>
+                    </div>
+               </div>
+
+               <div class="head2head-section-matchInfo-infobar-item" >
+                    <p>20%</p>
+                    <div class="head2head-section-matchInfo-infobar-item-score">
+                        <p>1 Draw</p>
+                    </div>
+                </div>
+
+                <div class="head2head-section-matchInfo-infobar-item" >
+                    <p>60%</p>
+                    <div class="head2head-section-matchInfo-infobar-item-score">
+                        <p>3 Loses</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="head2head-section-matchInfo-team">
+                <div class="head2head-section-matchInfo-team-logo">
+                    <img src="./images/manchester-city-logo.svg" alt="Proxima Nova Condensed">
+                </div>
+                <div class="head2head-section-matchInfo-team-name">
+                    <p>Manchester City</p>
+                </div>
+            </div>  
+        </div>
+
+        <div class="head2head-section-filter">
+            <div class="head2head-section-filter-item active">
+                <p>5</p>
+            </div>
+            <div class="head2head-section-filter-item">
+                <p>10</p>
+            </div>
+            <div class="head2head-section-filter-item">
+                <p>Toate</p>
+            </div>
+        </div>
+
+        <div class="head2head-section-rules">
+            <p>If the teams finish with equal points, the tie is made in the operation of the direct activity. Lorem ipsum dolor.</p>
+        </div>
+
+        <div class="head2head-section-stats">
+            <div class="head2head-section-stats-item">
+                <p class="head2head-section-stats-item-top">
+                    5/5 Matches  <span>100%</span>
+                </p>
+                <p class="head2head-section-stats-item-bottom">
+                    BTTS
+                </p>
+            </div>
+
+            <div class="head2head-section-stats-item bars">
+                <p class="head2head-section-stats-item-title">
+                    Clean Sheets
+                </p>
+                <div class="head2head-section-stats-item-greenBar">
+                    <p>100%</p>
+                </div>
+                <div class="head2head-section-stats-item-redBar">
+                    <div class="head2head-section-stats-item-redBar-visual"></div>
+                    <p>30%</p>
+                </div>
+            </div>
+
+            <div class="head2head-section-stats-item">
+                <p class="head2head-section-stats-item-top">
+                    5/5 Matches  <span>100%</span>
+                </p>
+                <p class="head2head-section-stats-item-bottom">
+                    Goals in both halfs
+                </p>
+            </div>
+
+            <div class="head2head-section-stats-item">
+                <p class="head2head-section-stats-item-top">
+                    5/5 Matches  <span>100%</span>
+                </p>
+                <p class="head2head-section-stats-item-bottom">
+                    Over 1.5
+                </p>
+            </div>
+
+            
+            <div class="head2head-section-stats-item danger">
+                <p class="head2head-section-stats-item-top">
+                    3/5 Matches  <span>60%</span>
+                </p>
+                <p class="head2head-section-stats-item-bottom">
+                    Over 2.5
+                </p>
+            </div>
+
+            
+            <div class="head2head-section-stats-item warning">
+                <p class="head2head-section-stats-item-top">
+                    1/5 Matches  <span>20%</span>
+                </p>
+                <p class="head2head-section-stats-item-bottom">
+                    Over 3.5
+                </p>
+            </div>
+        </div>
+
+        <div class="break"></div>
+
+        <div class="head2head-section-filterScroll">
+            <div class="head2head-section-filterScroll-item active">
+                <p>ALL</p>
+            </div>
+            <div class="head2head-section-filterScroll-item">
+                <p>Gimnasia y Esgrima La Plata - Home</p>
+            </div>
+            <div class="head2head-section-filterScroll-item">
+                <p>Manchester City - Away</p>
+            </div>
+
+            <div class="head2head-section-filterScroll-item">
+                <p>Gimnasia y Esgrima La Plata - Home</p>
+            </div>
+            <div class="head2head-section-filterScroll-item">
+                <p>Manchester City - Away</p>
+            </div>
+
+        </div>
+
+        <div class="head2head-section-lastMatches">
+            
+            <div class="head2head-section-lastMatches-item">
+                <div class="head2head-section-lastMatches-item-group">
+                     <p>Copa Libertadores - Grupe</p>
+                     <div class="head2head-section-lastMatches-item-group-date">
+                            <img src="images/EU flag.png" alt="">
+                            <p>20.02.2020</p>
+                     </div>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team victory">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-score">
+                    <p>60-50</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+            </div>
+
+                   
+            <div class="head2head-section-lastMatches-item">
+                <div class="head2head-section-lastMatches-item-group">
+                     <p>Copa Libertadores - Grupe</p>
+                     <div class="head2head-section-lastMatches-item-group-date">
+                            <img src="images/EU flag.png" alt="">
+                            <p>20.02.2020</p>
+                     </div>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team victory">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-score">
+                    <p>3-1</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+            </div>
+
+           
+                   
+            <div class="head2head-section-lastMatches-item">
+                <div class="head2head-section-lastMatches-item-group">
+                     <p>Copa Libertadores - Grupe</p>
+                     <div class="head2head-section-lastMatches-item-group-date">
+                            <img src="images/EU flag.png" alt="">
+                            <p>20.02.2020</p>
+                     </div>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team ">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-score">
+                    <p>0-2</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team victory">
+                    <p>Liverpool</p>
+                </div>
+
+            </div>
+
+                    
+            <div class="head2head-section-lastMatches-item">
+                <div class="head2head-section-lastMatches-item-group">
+                     <p>Copa Libertadores - Grupe</p>
+                     <div class="head2head-section-lastMatches-item-group-date">
+                            <img src="images/EU flag.png" alt="">
+                            <p>20.02.2020</p>
+                     </div>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-score">
+                    <p>1-1</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team">
+                    <p>Aston Villa</p>
+                </div>
+
+            </div>
+
+            <div class="head2head-section-lastMatches-item">
+                <div class="head2head-section-lastMatches-item-group">
+                     <p>Copa Libertadores - Grupe</p>
+                     <div class="head2head-section-lastMatches-item-group-date">
+                            <img src="images/EU flag.png" alt="">
+                            <p>20.02.2020</p>
+                     </div>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team victory">
+                    <p>Gimnasia y Esgrima La Plata</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-score">
+                    <p>4-2</p>
+                </div>
+
+                <div class="head2head-section-lastMatches-item-team">
+                    <p>Dinamo Spargabuci</p>
+                </div>
+
+            </div>
+
+
+
+        </div>
+
+        <div class="head2head-section-lastMatches-showMore">
+            Show More
+        </div>
+    </div>
+
+    <div class="popup-section hide">
+        <div class="popup-section-container">
+            <div class="popup-section-container-header">
+                <img src="./images/betano-logo.png" alt="">
+                <div class="close-btn">
+                </div>
+            </div>
+
+            <div class="popup-section-container-body">
+                <div class="popup-section-container-body-header">
+                    <h1>100% up To $250 Welcome Bonus+$10 Free Bet </h1>
+
+                </div>
+
+                <div class="popup-section-container-body-content">
+                    <div class="popup-section-container-body-content-item">
+                        <p>Procentaj</p>
+                        <p>100%</p>
+                    </div>
+
+                    <div class="popup-section-container-body-content-item">
+                        <p>Condiții de Rulaj</p>
+                        <p>40x</p>
+                    </div>
+
+                    <div class="popup-section-container-body-content-item">
+                        <p>Depunere Minimă</p>
+                        <p>$20</p>
+                    </div>
+                   
+
+                </div>
+                <button class="popup-section-container-body-btn" >REVENDICA</button>
+
+
+
+            </div>
+
+            <div class="popup-section-container-footer">
+                <p>
+                    UK players only. New players. Register & get up to 30 Free Spins [FS]. 10 FS*3 on selected slots over 3 days (10 FS per day upon log in). Must be claimed by 23:59 on day of grant & valid for 7 days once claimed. FS wins granted in bonus after all FS used; wins set at 14 (per 10 FS). Reg bonus wins capped at 100 exc. jp. wins. Deposit min 10, get 100% Bonus (max 100) + 30 FS (must be claimed within 7 days & valid for 7 days once claimed). FS available on specific games; wins granted in bonus after all FS are used. Bonus wins capped at 400 exc. JP wins. Wagering req. apply: 30x bonus funds (vary by game);T&Cs Apply
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+
+    <footer class="footer"></footer>
+
+
+    <script src="main.js"></script>
+
+</body>
+</html>
